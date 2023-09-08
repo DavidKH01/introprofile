@@ -1,0 +1,165 @@
+body {
+    display: grid;
+    background-image: linear-gradient(rgba(246, 224, 224, 0.842),rgba(188, 215, 228, 0.559),rgba(151, 255, 81, 0.233));
+    
+   
+    
+
+    
+}
+
+.link {
+    display: inline-block;
+    padding: 15px 0;
+    margin: 15px 25px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #0f0f0f;
+    font-weight: 800;
+    font-size: 20px;    
+}
+
+
+  img {
+    max-width: 50%;
+    max-height: 100%;
+    float: right;
+    
+  }
+
+
+  .container {
+    position: relative;
+    border: solid 1px;
+    height: 900px;
+
+    
+  }
+
+  p {
+
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,  -50%);
+
+    font-size: 20px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    float: left;
+    opacity: 1;
+  }
+
+.page2bg {
+  height: 100%;
+  border: 5px dotted black;
+  background-color: rgba(255, 237, 215,0.2);
+  background-clip: content-box;
+}
+
+
+
+/* Style for the container */
+.containerp2 {
+  border: 5px dotted black;
+  display: flex; /* Use flexbox to arrange elements horizontally */
+  justify-content: center; /* Center horizontally within the page */
+  align-items: center; /* Center vertically within the page */
+  height: 100vh; /* Make the container take up the full viewport height */
+}
+
+/* Style for the individual boxes */
+.box {
+  width: 50%; /* Each box takes up 50% of the container's width */
+  border: 1px solid black; /* Add borders for clarity */
+  padding: 20px; /* Add padding to create some space inside the boxes */
+  margin: 0 200px; /* Add margin to create space between the boxes */
+  height: auto; /* Let the height adjust based on content */
+}
+
+/* Style for the header */
+.box-header {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Style for the categories */
+.category {
+  margin-bottom: 10px;
+}
+
+/* Style for the vertical nav bars (initially hidden) */
+.nav-bar {
+  background-color: #f2f2f2;
+  padding: 10px;
+  display: none; /* Hide by default */
+}
+
+/* Style for the nav links */
+.nav-link {
+  display: block;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Show the nav-bar on hover over the category */
+.category:hover .nav-bar {
+  display: block;
+}
+
+
+.div3 {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; /* Set a background color for the page */
+}
+
+.containerp3 {
+  display: grid; /* Use CSS Grid to arrange tiles */
+  grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+  grid-gap: 30px; /* Gap between tiles */
+  width: 80%; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.tile {
+  width: 100px; /* Adjust the width of each tile as needed */
+  height: 100px; /* Adjust the height of each tile as needed */
+  background-color: #3498db; /* Set a background color for the tiles */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; /* Text color for tile content */
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.tile:nth-child(1) {
+  grid-column: 1 ; /* Tile 1 column */
+  grid-row: 1;    /* Tile 1 row */
+  justify-self: end; /*align tile to right*/
+  
+
+}
+
+.tile:nth-child(2) {
+  grid-column: 1 ; /* Tile 2 column */
+  justify-self: end;  /*align tile to right*/
+
+}
+
+.tile:nth-child(3) {
+  grid-column: 2; /* Tile 3 in the second column */
+  grid-row: 1;    /* Tile 3 in the first row */
+}
+
+.tile:nth-child(4) {
+  grid-column: 2; /* Tile 4 in the second column */
+}
