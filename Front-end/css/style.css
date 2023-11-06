@@ -70,12 +70,22 @@ body {
 }
 
 /* Style for the individual boxes */
-.box {
+.box{
+  grid-template-columns: repeat(2, 1fr); /*two columns, with 1fr notating they take equal fraction of space*/
+  padding: 20px;
+  border: 1px solid black;
+  margin: 0 200px;
+  
+
+}
+
+/* this was the orignal box code but the grid template above is better  */
+.box0 {
   width: 50%; /* Each box takes up 50% of the container's width */
   border: 1px solid black; /* Add borders for clarity */
   padding: 20px; /* Add padding to create some space inside the boxes */
   margin: 0 200px; /* Add margin to create space between the boxes */
-  height: auto; /* Let the height adjust based on content */
+  height: fixed; /* Let the height adjust based on content */   
 }
 
 /* Style for the header */
@@ -94,6 +104,7 @@ body {
   background-color: #f2f2f2;
   padding: 10px;
   display: none; /* Hide by default */
+
 }
 
 /* Style for the nav links */
